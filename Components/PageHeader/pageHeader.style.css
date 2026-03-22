@@ -1,0 +1,145 @@
+.page-header {
+  position: relative;
+
+  &.sticky {
+    position: sticky;
+    top: 0;
+
+    .page-header-top {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "Header is for visual only.";
+    display: block;
+    padding-block: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: rgb(0, 139, 0);
+    text-align: center;
+  }
+}
+
+.page-header-top {
+  background-color: var(--bg-page-header-1);
+}
+
+.page-header-bottom {
+  background-color: var(--bg-page-header-2);
+}
+
+.page-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  max-width: var(--content-mw);
+  margin-inline: auto;
+}
+
+.page-logo {
+  display: flex;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 100%;
+  color: var(--color-header-logo);
+  overflow: hidden;
+
+  & > * {
+    padding-block: 0.5rem;
+  }
+
+  .side-1 {
+    background-color: var(--primary-color-1);
+    padding-inline-start: 0.75rem;
+    padding-inline-end: 0.25rem;
+  }
+  .side-2 {
+    background-color: var(--primary-color-3);
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.75rem;
+  }
+}
+
+.search-input-group {
+  display: flex;
+  gap: 0.75rem;
+
+  border-radius: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  max-width: 20rem;
+  width: 100%;
+
+  background-color: var(--bg-color-content-body);
+
+  img {
+    width: 1.25rem;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.page-user-buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.btn-login,
+.btn-register {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.btn-login {
+  border-color: var(--primary-color-3);
+  background-color: var(--primary-color-3);
+  color: var(--button-primary-text);
+
+  &:hover {
+    background-color: var(--primary-color-3-hover);
+  }
+}
+
+.btn-register {
+  border-color: var(--primary-color-3);
+  background-color: var(--primary-color-2);
+  color: var(--button-primary-text);
+
+  &:hover {
+    background-color: var(--primary-color-2-hover);
+  }
+}
+
+.page-nav {
+  color: var(--bg-color-body);
+  font-weight: 600;
+  display: block;
+  height: 2.8125rem;
+
+  ul {
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    height: 100%;
+    padding-inline: 1.25rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--bg-page-header-1);
+    }
+  }
+}

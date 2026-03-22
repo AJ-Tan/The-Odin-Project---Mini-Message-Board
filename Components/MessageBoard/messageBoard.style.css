@@ -8,14 +8,31 @@
   --primary-color-1: #4971ab;
   --primary-color-1-border: #324b72;
   --primary-color-1-hover: #44659b;
+  --primary-color-2: #66af50;
+  --primary-color-2-hover: #6ebd55;
+  --primary-color-3: #1e2021;
+  --primary-color-3-hover: #131414;
+
   --bg-color-body: #dcdddd;
   --bg-color-content-header: #f5f5f5;
   --bg-color-content-body: white;
+  --bg-page-header-1: #3d4143;
+  --bg-page-header-2: #313436;
+
   --border-color: rgb(163, 163, 163);
   --button-primary-text: white;
 
   --color-text-sub: rgb(110, 110, 110);
   --color-text-user: #4973bc;
+  --color-header-logo: white;
+}
+
+:root {
+  --content-mw: 80rem;
+}
+
+input {
+  font: inherit;
 }
 
 body {
@@ -47,7 +64,7 @@ img {
 
 main {
   padding: 3rem 2rem;
-  max-width: 73rem;
+  max-width: var(--content-mw);
   margin-inline: auto;
 }
 
@@ -59,9 +76,9 @@ button {
   cursor: pointer;
   font-weight: 500;
   letter-spacing: 0.5px;
-  padding: 1rem 0.75rem;
-  transition: background-color 0.15s;
+  padding: 0.75rem;
   font-size: 1.05rem;
+  transition: background-color 0.15s;
 
   img {
     width: 1rem;

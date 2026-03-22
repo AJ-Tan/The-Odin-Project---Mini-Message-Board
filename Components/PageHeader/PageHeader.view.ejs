@@ -1,1 +1,31 @@
-<header class="page-header"></header>
+<% const links = ["Home", "Forums", "What's new", "Media"] %>
+<header class="page-header">
+  <div class="page-header-top">
+    <div class="page-header-content">
+      <div class="page-logo">
+        <div class="side-1"><span>CHAT</span></div>
+        <div class="side-2"><span>CORNER</span></div>
+      </div>
+
+      <div class="page-user-buttons">
+        <button class="btn-login"><img src="/assets/login-icon.svg" alt="">Log in</button>
+        <button class="btn-register"><img src="/assets/register-icon.svg" alt="">Register</button>
+      </div>
+    </div>
+  </div>
+  <div class="page-header-bottom">
+    <div class="page-header-content">
+      <nav class="page-nav">
+        <ul>
+          <% for(let link of links) { %>
+          <li><span><%= link %></span></li>
+          <% } %>
+        </ul>
+      </nav>
+      <div class="search-input-group">
+        <img src="/assets/search-icon.svg" alt="">
+        <input type="text" name="search" id="search" placeholder="Search...">
+      </div>
+    </div>
+  </div>
+</header>

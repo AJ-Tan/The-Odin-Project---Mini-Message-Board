@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Board</title>
+    <link rel="stylesheet" href="/MessageBoard/messageBoard.style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="main-header">
+        <h1>Message Board</h1>
+        <button class="primary-button">Write Message</button>
+      </header>
+      <ul class="message-list">
+        <% for(const {text, user, added} of messages) { %>
+          <li class="message-item">
+            <div class="user-details">
+              <div class="user-image">
+                <img src="https://i.sstatic.net/l60Hf.png" alt="">
+              </div>
+              <span class="user"><%= user %></span>
+            </div>
+            <div class="message-content">
+              <span class="date"><%= added %></span>
+              <span class="text"><%= text %></span>
+            </div>
+          </li>
+        <% } %> 
+      </ul>
+    </main>
+  </body>
+</html>

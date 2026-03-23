@@ -1,4 +1,4 @@
-const messageData = require("../models/messageData");
+const { messageData } = require("../models/messageData");
 const { format } = require("date-fns");
 
 const messageBoardController = {

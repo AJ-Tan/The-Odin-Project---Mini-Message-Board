@@ -8,4 +8,8 @@ const messageData = async () => {
   };
 };
 
-module.exports = messageData;
+const insertDB = (user, message) => {
+  db.push({ text: message, user, added: new Date() });
+};
+
+module.exports = { insertDB, messageData };

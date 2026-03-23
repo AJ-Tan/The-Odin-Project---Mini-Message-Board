@@ -167,6 +167,7 @@ form {
   .required {
     display: none;
     color: var(--color-warning);
+    margin-block-start: 0.25rem;
   }
 
   label:is(:has(input:user-invalid), :has(textarea:user-invalid)) ~ .required {

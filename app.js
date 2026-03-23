@@ -10,7 +10,9 @@ app.set("view engine", "ejs");
 app.use("/", messageBoardRoute);
 app.use("/create", createMessageRoute);
 
-app.listen(1022, "localhost", (err) => {
+const PORT = process.env.PORT || 1022;
+
+app.listen(PORT, (err) => {
   if (err) throw err;
-  console.log(`Server is running on http://localhost:1022`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 });

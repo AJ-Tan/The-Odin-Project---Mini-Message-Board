@@ -119,7 +119,7 @@ form {
   background-color: var(--bg-color-content-body);
   border-radius: 0.5rem;
   border: 1px solid var(--border-color);
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 
   label {
     display: flex;

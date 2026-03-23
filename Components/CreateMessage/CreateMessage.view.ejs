@@ -3,9 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Write Message</title>
+    <link rel="stylesheet" href="/CreateMessage/createMessage.style.css" />
+    <link rel="stylesheet" href="/PageHeader/pageHeader.style.css" />
   </head>
   <body>
-    CreateMessage
+    <%- include("../PageHeader/PageHeader.view.ejs") %>
+    <main>
+      <header class="main-header">
+        <h1>Write Message</h1>
+        <a href="../" class="button primary-button"
+          ><img src="/assets/return-icon.svg" alt="" />Return</a
+        >
+      </header>
+
+      <form action="" method="post">
+        <div class="input-group">
+          <label
+            >User * <input type="text" name="user" id="user" required />
+          </label>
+          <span class="required">This field is required.</span>
+        </div>
+        <div class="input-group">
+          <label
+            >Message *
+            <textarea name="message" id="message" required></textarea>
+          </label>
+          <span class="required">This field is required.</span>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </main>
   </body>
 </html>

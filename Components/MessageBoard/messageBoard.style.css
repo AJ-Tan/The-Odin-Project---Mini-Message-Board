@@ -68,7 +68,8 @@ main {
   margin-inline: auto;
 }
 
-button {
+button,
+.button {
   display: flex;
   gap: 0.5rem;
   border: none;
@@ -79,6 +80,7 @@ button {
   padding: 0.75rem;
   font-size: 1.05rem;
   transition: background-color 0.15s;
+  text-decoration: none;
 
   img {
     width: 1rem;
@@ -103,7 +105,8 @@ button {
   border-radius: 0.5rem;
   border: 1px solid var(--border-color);
   margin-block-end: 2.5rem;
-  padding: 2rem 1.5rem;
+  padding-inline: 1.5rem;
+  height: 5rem;
 }
 
 .message-list {

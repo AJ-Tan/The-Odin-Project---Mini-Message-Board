@@ -1,5 +1,5 @@
 const db = require("./db");
-const { getAllMessage, insertMessage } = require("./db/queries");
+const { getAllMessage, insertMessage, resetData } = require("./db/queries");
 
 // Simulate database
 const messageData = async () => {
@@ -14,4 +14,8 @@ const insertDB = (user, message) => {
   insertMessage(user, message);
 };
 
-module.exports = { insertDB, messageData };
+const resetDefault = async () => {
+  await resetData();
+};
+
+module.exports = { insertDB, messageData, resetDefault };

@@ -109,6 +109,11 @@ button,
   height: 5rem;
 }
 
+.main-control {
+  display: flex;
+  gap: 0.75rem;
+}
+
 .message-list {
   gap: 1.5rem;
 }

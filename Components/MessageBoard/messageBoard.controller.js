@@ -1,4 +1,4 @@
-const { messageData } = require("../models/messageData");
+const { messageData, resetDefault } = require("../models/messageData");
 const { format } = require("date-fns");
 
 const messageBoardController = {
@@ -21,6 +21,10 @@ const messageBoardController = {
     res.render("MessageBoard/MessageBoard.view.ejs", {
       messages: req.messageData,
     });
+  },
+  reset: async (req, res) => {
+    await resetDefault();
+    res.redirect("/");
   },
 };
 

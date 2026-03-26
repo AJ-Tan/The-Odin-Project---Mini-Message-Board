@@ -12,7 +12,10 @@
     <main>
       <header class="main-header">
         <h1>Message Board</h1>
-        <a href="/create" class="button primary-button"><img src="/assets/write-icon.svg" alt="">Write Message</a>
+        <div class="main-control">
+          <a href="/reset" class="button primary-button"><img src="/assets/reset-icon.svg" alt="">Reset Default</a>
+          <a href="/create" class="button primary-button"><img src="/assets/write-icon.svg" alt="">Write Message</a>
+        </div>
       </header>
       <ul class="message-list">
         <% for(const {text, user, added} of messages) { %>

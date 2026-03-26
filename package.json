@@ -5,6 +5,7 @@
   "dependencies": {
     "date-fns": "^4.1.0",
     "ejs": "^5.0.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "pg": "^8.20.0"
   }
 }

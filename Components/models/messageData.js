@@ -10,8 +10,8 @@ const messageData = async () => {
   };
 };
 
-const insertDB = (user, message) => {
-  insertMessage(user, message);
+const insertDB = async (user, message) => {
+  await insertMessage(user, message);
 };
 
 const resetDefault = async () => {

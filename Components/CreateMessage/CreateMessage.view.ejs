@@ -18,6 +18,7 @@
       </header>
 
       <form action="/create/insert" method="post">
+        <input type="hidden" name="formToken" value="<%= token %>" />
         <div class="input-group">
           <label
             >User * <input type="text" name="user" id="user" required />

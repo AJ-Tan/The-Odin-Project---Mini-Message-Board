@@ -1,9 +1,17 @@
 const express = require("express");
 const path = require("path");
+const session = require("express-session");
 const messageBoardRoute = require("./Components/MessageBoard/messageBoard.route");
 const createMessageRoute = require("./Components/CreateMessage/createMessage.route");
 const app = express();
 
+app.use(
+  session({
+    secret: process.env.SECRET_KEY,
+    resave: false,
+    saveUninitialized: true,
+  }),
+);
 app.use(express.static(path.join(__dirname, "Components")));
 app.set("views", path.join(__dirname, "Components"));
 app.set("view engine", "ejs");

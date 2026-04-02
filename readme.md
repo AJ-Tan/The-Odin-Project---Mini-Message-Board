@@ -14,7 +14,6 @@ A simple full-stack message board application built as part of **The Odin Projec
 - **Backend**: Node.js + Express.js
 - **Database**: PostgreSQL
 - **Templating**: EJS (server-side rendered views)
-- **Other**: `express-validator` (optional), `dotenv`, `pg` (PostgreSQL driver)
 
 This project covers the following topics from **The Odin Project Node.js Course**:
 
